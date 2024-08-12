@@ -1,0 +1,21 @@
+# Node modules are not needed in the Docker image
+node_modules
+npm-debug.log
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Build output directories
+dist
+build
+
+# Docker specific files
+Dockerfile
+.dockerignore
+
+# Git files
+.git
+.gitignore
