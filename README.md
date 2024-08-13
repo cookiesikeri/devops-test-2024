@@ -23,4 +23,11 @@ Pipeline step:
 
 NOte: i created the cluster on aws using private network for security reasons.
 
+ArgoCD can be accessed here https://ab53794af9d7248d381b6052a9fd4ab7-150846727.us-east-1.elb.amazonaws.com/applications?showFavorites=false&proj=&sync=&health=&namespace=&cluster=&labels=
+
+Jenkins for this project can be accessed here http://34.195.57.238:8080/
+
+to access the Jump server kindly reach out to for the pem file.
+
+
 
