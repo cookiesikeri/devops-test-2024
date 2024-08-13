@@ -4,10 +4,11 @@ Tools i used for this project:
 2. ArgoCD: Continuous deployment to Kubernetes
 3. Kubernetes: Orchestration for containerized applications
 4. Trivy: Container vulnerability scanner
-5. OWASP Dependency-Check: Ensuring secure dependencies
-6. Docker: Containerized application deployment
-7. Terraform: Infrastructure as Code for AWS EKS
-8. Docker: Used in handling the images.
+5. Trivy FS: scanning the file system of the project
+6. OWASP Dependency-Check: Ensuring secure dependencies
+7. Docker: Containerized application deployment
+8. Terraform: Infrastructure as Code for AWS EKS
+9. Docker: Used in handling the images.
 
 This is a full end to end k8s (Kubernetes) tasks for a test environment.
 
