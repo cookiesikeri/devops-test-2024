@@ -16,7 +16,7 @@ Pipeline step:
 
 1. when a code is pushed to the man branch
 2. Jenkins is triggered via its webhook and handles the build, test and updates the github manifest (image of the app to a new tag)
-3. argo Cd syncs and replaces the old pods and services in the cluster to a new one.
+3. argo Cd listens to the repo and pulls latest app sand replaces with the old pods and services in the cluster.
 4. the app can be access via a load balancer service  via  http://k8s-default-devtests-3a49bb816d-3ecd0200ffd623c8.elb.us-east-1.amazonaws.com/
 5. the app runs on 3 pods and can be scaled manually from the deployment file in the repo.
 6. the app db credentials were handled using kubernetes secrets (for security best practice), rather than hard coding it.
