@@ -14,9 +14,26 @@ spec:
     spec:
       containers:
       - name: devtest
-        image: ikericookies/devtestv1:357
+        image: ikericookies/devtestv1:348
         ports:
         - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: "development"
+        - name: PORT
+          value: "3000"
+        - name: DATABASE
+          value: "mongodb+srv://ayoolavictor415:<password>@cluster0.arqwy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+        - name: DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: devtest-secrets
+              key: DATABASE_PASSWORD
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: devtest-secrets
+              key: JWT_SECRET
 ---
 apiVersion: v1
 kind: Service
