@@ -29,5 +29,7 @@ Jenkins for this project can be accessed here http://34.195.57.238:8080/
 
 to access the Jump server kindly reach out to for the pem file.
 
+the link to the cluster https://github.com/cookiesikeri/eks-github-action-terraform
+
 
 
