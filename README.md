@@ -1,13 +1,13 @@
 Tools i used for this project:
 
-Jenkins: Automated CI/CD pipelines
-ArgoCD: Continuous deployment to Kubernetes
-Kubernetes: Orchestration for containerized applications
-Trivy: Container vulnerability scanner
-OWASP Dependency-Check: Ensuring secure dependencies
-Docker: Containerized application deployment
-Terraform: Infrastructure as Code for AWS EKS
-Docker: Used in handling the images.
+1. Jenkins: Automated CI/CD pipelines
+2. ArgoCD: Continuous deployment to Kubernetes
+3. Kubernetes: Orchestration for containerized applications
+4. Trivy: Container vulnerability scanner
+5. OWASP Dependency-Check: Ensuring secure dependencies
+6. Docker: Containerized application deployment
+7. Terraform: Infrastructure as Code for AWS EKS
+8. Docker: Used in handling the images.
 
 This is a full end to end k8s (Kubernetes) tasks for a test environment.
 
