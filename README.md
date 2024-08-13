@@ -28,6 +28,8 @@ ArgoCD can be accessed here https://ab53794af9d7248d381b6052a9fd4ab7-150846727.u
 
 Jenkins for this project can be accessed here http://34.195.57.238:8080/
 
+Prometheus link http://a3d6fdc6a88c54d9a8c60c5a3d298307-1922603291.us-east-1.elb.amazonaws.com/targets?search=
+
 to access the Jump server kindly reach out to for the pem file.
 
 the link to the cluster https://github.com/cookiesikeri/eks-github-action-terraform
