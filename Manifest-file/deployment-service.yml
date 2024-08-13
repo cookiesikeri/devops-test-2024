@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devtest
-        image: ikericookies/devtestv1:233
+        image: ikericookies/devtestv1:234
         ports:
         - containerPort: 3000
 ---
