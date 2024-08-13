@@ -1,0 +1,33 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devtest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devtest
+  template:
+    metadata:
+      labels:
+        app: devtest
+    spec:
+      containers:
+      - name: devtest
+        image: ikericookies/devtest1:latest
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: devtest-service
+spec:
+  selector:
+    app: devtest
+  ports:
+  - protocol: TCP
+    port: 80                
+    targetPort: 3000
+  type: LoadBalancer
