@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: devtest
 spec:
-  replicas: 6
+  replicas: 4
   selector:
     matchLabels:
       app: devtest
@@ -34,18 +34,6 @@ spec:
             secretKeyRef:
               name: devtest-secrets
               key: JWT_SECRET
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 3000
-          initialDelaySeconds: 10
-          periodSeconds: 10
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 3000
-          initialDelaySeconds: 5
-          periodSeconds: 10
 ---
 apiVersion: v1
 kind: Service
