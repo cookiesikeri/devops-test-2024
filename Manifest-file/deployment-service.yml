@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: devtest
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: devtest
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devtest
-        image: ikericookies/devtestv1:409
+        image: ikericookies/devtestv1:407
         ports:
         - containerPort: 3000
         env:
@@ -34,6 +34,18 @@ spec:
             secretKeyRef:
               name: devtest-secrets
               key: JWT_SECRET
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 10
 ---
 apiVersion: v1
 kind: Service
