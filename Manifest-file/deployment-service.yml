@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devtest
-        image: ikericookies/devtestv1:415
+        image: ikericookies/devtestv1:407
         ports:
         - containerPort: 3000
         env:
@@ -68,3 +68,9 @@ spec:
       target:
         type: Utilization
         averageUtilization: 50
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 70
